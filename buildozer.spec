@@ -1,4 +1,5 @@
 [app]
+version = 1.0
 
 # (str) Title of your application
 title = SurveyApp
