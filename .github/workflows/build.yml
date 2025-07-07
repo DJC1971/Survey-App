@@ -21,7 +21,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y zip unzip git python3-pip build-essential \
-          libncurses5 libstdc++6 libgtk-3-0 libffi-dev libssl-dev \
+          libstdc++6 libffi-dev libssl-dev \
           openjdk-17-jdk wget
 
         pip install --upgrade pip
