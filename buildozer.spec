@@ -1,86 +1,81 @@
 [app]
-version = 1.0
 
 # (str) Title of your application
-title = SurveyApp
+title = Survey App
 
 # (str) Package name
 package.name = surveyapp
 
-# (str) Package domain (used for Android package name)
-package.domain = org.test
+# (str) Package domain (reverse DNS style)
+package.domain = org.example
 
-# (str) Source code where your main.py or SurveyApp1.py lives
-source.dir = .
+# (str) Source code filename
+source.main = SurveyApp1.py
 
-# (list) Source files to include
-source.include_exts = py,csv
-
-# (str) The main .py file to use as the main entry point
-main.py = SurveyApp1.py
-
-# (list) Application requirements (comma-separated)
+# (list) Application requirements
 requirements = python3,kivy
 
-# (str) Supported orientation (one of: landscape, sensorLandscape, portrait or all)
+# (str) Application version
+version = 1.0.0
+
+# (str) Supported orientation
 orientation = portrait
 
-# (bool) Indicate if the application should be fullscreen or not
-fullscreen = 1
+# (bool) Copy .py files instead of compiling to .pyo/.pyc
+# We can keep default False to compile (smaller size)
+# compile = True
 
-# (bool) Hide the statusbar
-android.hide_statusbar = 1
+# (str) Log level (0=debug, 1=info, 2=warning, 3=error, 4=critical)
+log_level = 2
 
-# (str) Android entry point, default is ok
-android.entrypoint = org.kivy.android.PythonActivity
+# (str) Presplash image (optional)
+# presplash.filename = presplash.png
 
-# (str) Android app theme
-android.theme = @android:style/Theme.NoTitleBar
+# (str) Icon file (optional)
+# icon.filename = icon.png
 
-# (bool) Use a custom source include (used when packaging .py files manually)
-copy_to_apk = 1
+# (str) Supported Android API (use default, no need to specify)
+# android.api = 
 
-# (bool) Presplash screen
-android.presplash =
+# (str) Minimum Android API
+# android.minapi = 21
 
-# (str) Presplash screen color (hex format, eg: #ffffff)
-android.presplash_color = #ffffff
+# (str) Target Android API
+# android.target = 33
 
-# (int) Target API (ensure it's installed in GitHub Actions)
-android.api = 31
+# (str) Android NDK version (omit to use default)
+# android.ndk = 
 
-# (int) Minimum API your APK will support
-android.minapi = 21
+# (bool) Android fullscreen
+fullscreen = 0
 
-# (str) Android NDK version
-android.ndk = 25b
+# (bool) Android allow backup
+android.allow_backup = True
 
-# (str) NDK API to use
-android.ndk_api = 21
+# (bool) Android debug mode
+android.debug = 1
 
-# (bool) Accept SDK license
-android.accept_sdk_license = True
+# (str) Android arch (default is armeabi-v7a)
+# android.arch = armeabi-v7a
 
-# (bool) Enable AndroidX
-android.enable_androidx = True
+# (str) Path to the Android SDK (omit)
+# android.sdk_path = 
 
-# (str) Package format
-android.packaging = zip
+# (str) Path to the Android NDK (omit)
+# android.ndk_path = 
 
-# (bool) Whether to copy library instead of linking (useful on GitHub Actions)
-android.copy_libs = 1
+# (str) Android entry point
+# android.entrypoint = org.kivy.android.PythonActivity
 
-# (str) Path to icon file
-icon.filename = %(source.dir)s/icon.png
+# (str) Android app theme (omit)
+# android.theme = @android:style/Theme.NoTitleBar
 
-# (list) Permissions
-android.permissions = INTERNET
+# (bool) Android whitelist
+# android.whitelist = 
 
-# (str) Supported architectures
-android.archs = arm64-v8a, armeabi-v7a
+# (str) Supported orientations separated by comma
+# orientation = portrait
 
+# (list) Permissions (not needed for writing to internal app folder)
+# android.permissions =
 
-[buildozer]
-
-# (str) Build target (only "android" is used here)
-target = android
