@@ -44,8 +44,11 @@ log_level = 2
 # (str) Target Android API
 # android.target = 33
 
-# (str) Android NDK version (omit to use default)
-# android.ndk = 
+# (str) Android.___ versions (omit to use default)
+android.sdk = 33
+android.ndk = 25b
+android.build_tools = 33.0.2
+ 
 
 # (bool) Android fullscreen
 fullscreen = 0
