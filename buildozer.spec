@@ -10,6 +10,7 @@ package.name = surveyapp
 package.domain = org.example
 
 # (str) Source code filename
+source.dir = .
 source.main = SurveyApp1.py
 
 # (list) Application requirements
