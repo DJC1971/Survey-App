@@ -1,0 +1,6 @@
+﻿id,question,type,options,parent_id,parent_answer
+1,What is your name?,data_entry,,,
+2,What is your house number?,data_entry,,,
+3,How satisfied are you with service?,multiple_choice,Very satisfied;Satisfied;Neutral;Dissatisfied;Very dissatisfied,,
+4,Please explain why you are dissatisfied,data_entry,,3,Dissatisfied
+5,Please explain why you are very dissatisfied,data_entry,,3,Very dissatisfied
